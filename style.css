@@ -26,6 +26,7 @@ select {
   width: 100%;
   font-size: 1rem;
   padding: 4px;
+  display: block;
 }
 
 select:disabled{
@@ -33,7 +34,7 @@ select:disabled{
 }
 
 label {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .logContainer {
@@ -41,4 +42,5 @@ label {
   font-size: 1.5rem;
   font-weight: 800;
   margin: 0;
+  grid-column: 1/-1;
 }
