@@ -18,23 +18,28 @@ body{
 }
 
 select {
-  background-color: #ccc;
+  background-color: #313131;
   border-radius: 4px;
   outline: none;
   border: none;
   height: 100%;
-  width: 100%;
-  font-size: 1rem;
-  padding: 4px;
+  width: 300px;
+  max-width: 100%;
+  font-size: 1.3rem;
+  padding: 6px;
   display: block;
+  align-self: center;
+  color: white;
+  border: #111 solid 1px;
 }
 
 select:disabled{
-  background-color: #888;
+  background-color: #13131356;
 }
 
+
 label {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .logContainer {

@@ -4,19 +4,19 @@ let logContainer = document.querySelector('[data-js="log-container"]')
 
 const estadoLista = [
   {
-    PR1: "Curitiba (1)",
-    PR2: "Cascavel (2)",
-    PR3: "Maringá (3)"
+    PR1: "Curitiba",
+    PR2: "Cascavel",
+    PR3: "Maringá"
   },
   {
-    SC4: "Florianópolis (4)",
-    SC5: "Blumenau (5)",
-    SC6: "Lages (6)"
+    SC4: "Florianópolis",
+    SC5: "Blumenau",
+    SC6: "Lages"
   },
   {
-    RS7: "Porto Alegre (7)",
-    RS8: "Gramado (8)",
-    RS9: "Caxias do Sul (9)"
+    RS7: "Porto Alegre",
+    RS8: "Gramado",
+    RS9: "Caxias do Sul"
   }
 ]
 
@@ -54,7 +54,7 @@ estadoContainer.addEventListener("input", (event) => {
     textValueOption === "Selecione" 
     ? logContainer.textContent = "..." 
     : logContainer.textContent 
-    = `${textValueOption.slice(0, -4)}/${cidadeContainer.value.slice(0, -1)}`
+    = `${textValueOption}/${cidadeContainer.value.slice(0, -1)}`
 
   })
 })
