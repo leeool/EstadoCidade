@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Estado e Cidade</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="estado">
+      <label for="estado">Selecione um Estado</label>
+      <select name="disabilitado" id="estado" data-js="estado">
+        <option value="">Selecione</option>
+        <option value="Paraná ('PR')">Paraná ('PR')</option>
+        <option value="Santa Catarina ('SC')">Santa Catarina ('SC')</option>
+        <option value="Rio Grande do Sul ('RS')">Rio Grande do Sul ('RS')</option>
+      </select>
+    </div>
+
+    <div class="cidade">
+      <label for="cidade">Selecione uma cidade</label>
+      <select name="" id="cidade" data-js="cidade" disabled>
+        <option value="">Selecione</option>
+      </select>
+    </div>
+
+    <p class="logContainer" data-js="log-container">...</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

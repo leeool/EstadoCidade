@@ -1,0 +1,44 @@
+body{
+  background-color: #212121;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  gap: 32px;
+}
+
+.cidade, .estado {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+select {
+  background-color: #ccc;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+  padding: 4px;
+}
+
+select:disabled{
+  background-color: #888;
+}
+
+label {
+  font-size: 1.3rem;
+}
+
+.logContainer {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+}
