@@ -1,6 +1,5 @@
 const estadoContainer = document.querySelector('[data-js="estado"]')
 let cidadeContainer = document.querySelector('[data-js="cidade"]')
-
 let logContainer = document.querySelector('[data-js="log-container"]')
 
 const estadoLista = [
@@ -33,8 +32,8 @@ estadoContainer.addEventListener("input", (event) => {
 
   cidadeContainer.innerHTML = ""
   cidadeContainer.removeAttribute("disabled")
-
   cidadeContainer.innerHTML = "<Option value=''>Selecione</Option>"
+
   if (inputValue === "Paraná ('PR')") {
     for ([_, value] of Object.entries(estadoLista[0])) {
       cidadeContainer.innerHTML += `<Option value="${value}">${value}</Option>`
@@ -50,11 +49,9 @@ estadoContainer.addEventListener("input", (event) => {
   }
   
   cidadeContainer.addEventListener("input", event => {
-    if(!event.explicitOriginalTarget.value){
-      logContainer.textContent = "..."
-      return
-    }
-    logContainer.textContent = event.explicitOriginalTarget.value.slice(0, -3)
+    !event.explicitOriginalTarget.value 
+    ? logContainer.textContent = "..." 
+    : logContainer.textContent = event.explicitOriginalTarget.value.slice(0, -3)
   })
 
 })
