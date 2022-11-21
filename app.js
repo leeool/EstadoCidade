@@ -54,7 +54,7 @@ estadoContainer.addEventListener("input", (event) => {
       logContainer.textContent = "..."
       return
     }
-    logContainer.textContent = event.explicitOriginalTarget.value
+    logContainer.textContent = event.explicitOriginalTarget.value.slice(0, -3)
   })
 
 })
